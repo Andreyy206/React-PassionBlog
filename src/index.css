@@ -32,14 +32,14 @@
   --light: 255, 255, 255;
   --dark: 41, 41, 58;
 
-  --step--2: clamp(0.8784rem, 0.4991rem + 1.8965vw, 1.9214rem);
-  --step--1: clamp(0.9372rem, 0.5325rem + 2.0235vw, 2.0501rem);
-  --step-0: clamp(1rem, 0.5682rem + 2.1591vw, 2.1875rem);
-  --step-1: clamp(1.067rem, 0.6063rem + 2.3038vw, 2.3341rem);
-  --step-2: clamp(1.1385rem, 0.6469rem + 2.4581vw, 2.4904rem);
-  --step-3: clamp(1.2148rem, 0.6902rem + 2.6228vw, 2.6573rem);
-  --step-4: clamp(1.2962rem, 0.7365rem + 2.7985vw, 2.8353rem);
-  --step-5: clamp(1.383rem, 0.7858rem + 2.986vw, 3.0253rem);
+  --step--2: clamp(0.7686rem, 0.654rem + 0.5728vw, 1.0979rem);
+  --step--1: clamp(0.8201rem, 0.6978rem + 0.6112vw, 1.1715rem);
+  --step-0: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
+  --step-1: clamp(0.9336rem, 0.7945rem + 0.6959vw, 1.3338rem);
+  --step-2: clamp(0.9962rem, 0.8477rem + 0.7425vw, 1.4231rem);
+  --step-3: clamp(1.0629rem, 0.9045rem + 0.7922vw, 1.5185rem);
+  --step-4: clamp(1.1341rem, 0.9651rem + 0.8453vw, 1.6202rem);
+  --step-5: clamp(1.2101rem, 1.0297rem + 0.902vw, 1.7287rem);
 }
 @layer base {
   body {
