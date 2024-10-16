@@ -83,8 +83,72 @@
   img {
     @apply block;
   }
+  
 
   .banner-card:hover img {
     @apply opacity-50;
+  }
+
+  .article > *{
+    @apply leading-loose
+  }
+  .article p{
+    @apply mb-2
+  }
+  .article p::first-child::first-letter{
+    @apply text-red-500
+  }
+
+  .article ol {
+    @apply list-decimal
+  }
+  .article ul {
+    @apply list-disc
+  }
+  .article blockquote {
+    @apply pl-5 border border-red-500
+  }
+  .article a{
+    @apply hover:text-accent
+  }
+  }
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.icon{
+  transition: .5s ease;
+}
+.icon:hover{
+  animation: anim-scale .5s linear;
+}
+
+@keyframes anim-scale {
+  0%{
+    transform:scale(1)
+  }
+  50%{
+    transform:scale(.7)
+  }
+  100%{
+    transform:scale(1)
   }
 }

@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import { imgUrlPath } from '@/components/helpers/functions-general';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { fashionBlog } from '@/components/data/dataFashion';
+import { Link } from 'react-router-dom';
 
 const HomeBanner = () => {
     function SampleNextArrow(props) {
@@ -40,6 +41,33 @@ const HomeBanner = () => {
       slidesToScroll: 3,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  
     };
   return (
     <>
@@ -52,7 +80,7 @@ const HomeBanner = () => {
                   <div className='banner-card relative px-1 outline-none' key={key}>
                     <div className='bg-black'>
                       <img
-                        src={`${imgUrlPath}${item.fashion_image}`} className="w-full h-[746px] object-cover object-center"
+                        src={`${imgUrlPath}${item.fashion_image}`} className="w-full  h-[300px] md:h-[746px] object-cover object-center"
                         alt=''
                       />
                     </div>
@@ -60,7 +88,7 @@ const HomeBanner = () => {
                       <small className='text-xs uppercase '>{item.fashion_category}</small>
                       <p className='text-xs mt-3 mb-1 uppercase'>
                         {item.fashion_published}</p>
-                      <h4>{item.fashion_title}</h4>
+                      <Link to = {`${item.fashion_title.toLowerCase().replaceAll(" ","-")}`}><h4>{item.fashion_title}</h4></Link>
                     </div>
                   </div>
                 );

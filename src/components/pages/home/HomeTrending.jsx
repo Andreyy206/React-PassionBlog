@@ -14,7 +14,7 @@ const HomeTrending = () => {
       <section className='py-24'>
         <Wrapper>
             <PartHeader title="Trending Posts"/>
-            <div className='grid grid-cols-4 gap-5'>
+            <div className='grid md:grid-cols-4 gap-5'>
 
             {fashionBlog.slice(0,4).map((item, key)=>{
                 return (
