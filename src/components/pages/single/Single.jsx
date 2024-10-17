@@ -71,12 +71,9 @@ const Single = () => {
 
       <div className='py-24'>
         <Wrapper>
-          <div className='grid grid-cols-[3fr_1fr] w-full'>
+          <div className='grid md:grid-cols-[3fr_1fr] w-full'>
             <div className='article'>
-                <Markdown>
-
-                    {article().fashion_article}
-                </Markdown>
+              <Markdown>{article().fashion_article}</Markdown>
             </div>
             <aside>
               <WidgetFollow />

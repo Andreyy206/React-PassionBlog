@@ -10,7 +10,7 @@ import Footer from "@/components/partials/Footer";
 const Home = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <HomeBanner />
       <HomeTrending />
       <HomeSticky />

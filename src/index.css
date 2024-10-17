@@ -140,6 +140,12 @@
 .icon:hover{
   animation: anim-scale .5s linear;
 }
+.no-scroll{
+  @apply h-screen overflow-hidden
+}
+
+
+
 
 @keyframes anim-scale {
   0%{

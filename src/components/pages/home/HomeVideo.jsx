@@ -1,7 +1,7 @@
 import { videos } from "@/components/data/dataVideos";
 import React from "react";
-import PartHeader from "./part/PartHeader";
 import { imgUrlPath } from "@/components/helpers/functions-general";
+import PartHeader from "../part/PartHeader";
 
 const HomeVideo = () => {
   const [code, setCode] = React.useState(
@@ -22,7 +22,7 @@ const HomeVideo = () => {
           referrerPolicy='strict-origin-when-cross-origin'
           allowFullScreen
         ></iframe>
-        <div className='flex gap-6 max-w-[390px] md:max-w-[900px] overflow-auto mt-10 pb-5 '>
+        <div className='flex gap-6 max-w-[350px] md:max-w-[900px] overflow-auto mt-10 pb-5 '>
           {videos.map((item, key) => {
             return (
               <button
